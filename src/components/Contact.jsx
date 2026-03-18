@@ -79,7 +79,7 @@ export default function Contact() {
 
           <motion.div className="contact__grid" variants={stagger}>
             <motion.div variants={fadeUp}>
-              <ContactCard icon={Mail} label="Email — click to copy" value={personal.email} onClick={copyEmail} href={personal.gmailUrl} />
+              <ContactCard icon={Mail} label="Click to Send Email" value={personal.email} href={personal.gmailUrl} />
             </motion.div>
             <motion.div variants={fadeUp}>
               <ContactCard icon={Linkedin} label="LinkedIn" value={personal.linkedin} href={personal.linkedinUrl} />
