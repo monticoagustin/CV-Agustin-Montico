@@ -1175,3 +1175,10 @@ footer span {
   border-color: var(--azure-20);
   color: var(--azure-light);
 }
+
+/* ===== SIDEBARS — hide on small screens ===== */
+@media (max-width: 1100px) {
+  .sidebars-hide {
+    display: none;
+  }
+}

@@ -12,6 +12,7 @@ import ScrollProgress from './components/ScrollProgress'
 import CursorGlow from './components/CursorGlow'
 import Loader from './components/Loader'
 import BackToTop from './components/BackToTop'
+import SideBars from './components/SideBars'
 
 export default function App() {
   const [loading, setLoading] = useState(true)
@@ -63,6 +64,7 @@ export default function App() {
             </div>
           </footer>
           <BackToTop />
+          <SideBars />
         </motion.div>
       )}
     </>
