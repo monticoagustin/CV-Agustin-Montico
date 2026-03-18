@@ -3,14 +3,6 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 import { Mail, Linkedin, MapPin, Phone, ChevronDown, Download } from 'lucide-react'
 import { personal } from '../data'
 import { useRipple } from '../hooks/useRipple'
-import { useTypewriter } from '../hooks/useTypewriter'
-
-const roles = [
-  'Junior Cloud Engineer',
-  'Azure Administrator',
-  'AZ-104 Certified',
-  'Cloud & Security Analyst',
-]
 
 const container = {
   hidden: { opacity: 0 },
@@ -102,16 +94,17 @@ export default function Hero() {
             </h1>
           </motion.div>
 
-          {/* Typewriter title */}
-          <motion.div className="hero__title" variants={item} style={{ x: titleX, y: titleY }}>
-            <span className="hero__typewriter">
-              {typedText}
-              <span className="hero__cursor">|</span>
-            </span>
-            <span className="hero__title-sep">·</span>
-            <div className="hero__azure-badge">
+          {/* Role badges */}
+          <motion.div variants={item} style={{ x: titleX, y: titleY, display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
+            <div className="hero__role-badge hero__role-badge--primary">
               <span className="hero__azure-dot" />
-              Microsoft Azure
+              Cloud & Security Analyst
+            </div>
+            <div className="hero__role-badge">
+              ☁️ Azure Administrator
+            </div>
+            <div className="hero__role-badge">
+              ✓ AZ-104 Certified
             </div>
           </motion.div>
 
