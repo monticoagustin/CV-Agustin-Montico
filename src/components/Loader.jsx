@@ -81,6 +81,7 @@ export default function Loader({ onComplete }) {
               backgroundClip: 'text',
               position: 'relative',
               zIndex: 1,
+              padding: '0.12em 0.1em',
             }}
           >
             AM
