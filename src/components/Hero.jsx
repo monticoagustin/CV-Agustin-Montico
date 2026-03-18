@@ -141,7 +141,7 @@ export default function Hero() {
               whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
               Get in Touch
             </motion.a>
-            <motion.a href="/Agustin_Montico(CV-English).pdf" download className="btn btn-outline"
+            <motion.a href="/Agustin_Montico(CV-English).pdf" download className="btn btn-green"
               onClick={rippleBlue} whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
               <Download size={14} />Download CV
             </motion.a>

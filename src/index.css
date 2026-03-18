@@ -204,6 +204,18 @@ h4 {
   background: var(--azure-10);
 }
 
+.btn-green {
+  background: #16a34a;
+  color: #fff;
+  border: 1px solid #16a34a;
+}
+
+.btn-green:hover {
+  background: #15803d;
+  border-color: #15803d;
+  box-shadow: 0 0 24px rgba(22, 163, 74, 0.35);
+}
+
 /* ===== BADGE ===== */
 .badge {
   display: inline-flex;
