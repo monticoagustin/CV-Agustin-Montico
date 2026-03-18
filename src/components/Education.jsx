@@ -1,5 +1,11 @@
 import { motion } from 'framer-motion'
-import { GraduationCap, Award } from 'lucide-react'
+import { GraduationCap, Award, Cloud, Globe, BarChart2 } from 'lucide-react'
+
+const certIcons = {
+  cloud: Cloud,
+  globe: Globe,
+  chart: BarChart2,
+}
 import { education, certifications } from '../data'
 import TiltCard from './TiltCard'
 
@@ -78,7 +84,9 @@ export default function Education() {
                   className={`card cert-card${cert.highlight ? ' cert-card--highlight' : ''}`}
                   intensity={6}
                 >
-                  <div className="cert-card__icon">{cert.icon}</div>
+                  <div className="cert-card__icon">
+                    {(() => { const Icon = certIcons[cert.icon]; return Icon ? <Icon size={22} /> : null })()}
+                  </div>
                   <div className="cert-card__name">{cert.name}</div>
                   <div className="cert-card__issuer">{cert.issuer}</div>
                   {cert.highlight && (

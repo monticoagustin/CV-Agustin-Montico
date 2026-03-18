@@ -121,18 +121,18 @@ export const certifications = [
     name: 'AZ-104: Microsoft Azure Administrator Associate',
     issuer: 'Microsoft',
     highlight: true,
-    icon: '☁️',
+    icon: 'cloud',
   },
   {
     name: 'Cambridge English: B2 First',
     issuer: 'Cambridge Assessment English',
     highlight: false,
-    icon: '🌐',
+    icon: 'globe',
   },
   {
     name: 'SQL · Power BI · Tableau · Excel for Data Analysis',
     issuer: 'Coderhouse',
     highlight: false,
-    icon: '📊',
+    icon: 'chart',
   },
 ]

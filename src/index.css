@@ -1182,3 +1182,23 @@ footer span {
     display: none;
   }
 }
+
+/* ===== CERT CARD ICON — styled ===== */
+.cert-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--azure-10);
+  border: 1px solid var(--azure-20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--azure-light);
+  margin-bottom: 0.25rem;
+}
+
+.cert-card--highlight .cert-card__icon {
+  background: linear-gradient(135deg, rgba(0,120,212,0.2), rgba(0,188,242,0.1));
+  border-color: rgba(0,188,242,0.3);
+  box-shadow: 0 0 16px rgba(0,120,212,0.15);
+}
