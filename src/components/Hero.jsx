@@ -102,9 +102,6 @@ export default function Hero() {
             <div className="hero__role-badge">
               ☁️ Azure Administrator
             </div>
-            <div className="hero__role-badge">
-              ✓ AZ-104 Certified
-            </div>
           </motion.div>
 
           {/* Summary */}
