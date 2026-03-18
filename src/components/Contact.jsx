@@ -79,13 +79,13 @@ export default function Contact() {
 
           <motion.div className="contact__grid" variants={stagger}>
             <motion.div variants={fadeUp}>
-              <ContactCard icon={Mail} label="Email — click to copy" value={personal.email} onClick={copyEmail} />
+              <ContactCard icon={Mail} label="Email — click to copy" value={personal.email} onClick={copyEmail} href={personal.gmailUrl} />
             </motion.div>
             <motion.div variants={fadeUp}>
               <ContactCard icon={Linkedin} label="LinkedIn" value={personal.linkedin} href={personal.linkedinUrl} />
             </motion.div>
             <motion.div variants={fadeUp}>
-              <ContactCard icon={Phone} label="Phone" value={personal.phone} href={`tel:${personal.phone.replace(/\s/g, '')}`} />
+              <ContactCard icon={Phone} label="WhatsApp" value={personal.phone} href={personal.whatsappUrl} />
             </motion.div>
             <motion.div variants={fadeUp}>
               <ContactCard icon={MapPin} label="Location" value={personal.location} />
@@ -96,7 +96,7 @@ export default function Contact() {
             <p>
               Currently based in <strong style={{ color: 'var(--text)' }}>Rosario, Argentina</strong>.
               Available for remote and on-site opportunities.{' '}
-              <a href={`mailto:${personal.email}`}>Send me an email →</a>
+              <a href={personal.gmailUrl} target="_blank" rel="noreferrer">Send me an email →</a>
             </p>
           </motion.div>
         </motion.div>

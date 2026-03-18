@@ -116,7 +116,7 @@ export default function Hero() {
 
           {/* Contact */}
           <motion.div className="hero__contacts" variants={item} style={{ x: contactX, y: contactY }}>
-            <a href={`mailto:${personal.email}`} className="hero__contact-item">
+            <a href={personal.gmailUrl} target="_blank" rel="noreferrer" className="hero__contact-item">
               <Mail size={14} />{personal.email}
             </a>
             <a href={personal.linkedinUrl} target="_blank" rel="noreferrer" className="hero__contact-item">
@@ -125,7 +125,7 @@ export default function Hero() {
             <span className="hero__contact-item">
               <MapPin size={14} />{personal.location}
             </span>
-            <a href={`tel:${personal.phone.replace(/\s/g, '')}`} className="hero__contact-item">
+            <a href={personal.whatsappUrl} target="_blank" rel="noreferrer" className="hero__contact-item">
               <Phone size={14} />{personal.phone}
             </a>
           </motion.div>

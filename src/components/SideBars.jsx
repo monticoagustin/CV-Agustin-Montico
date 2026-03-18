@@ -39,7 +39,9 @@ export default function SideBars() {
         </motion.a>
 
         <motion.a
-          href={`mailto:${personal.email}`}
+          href={personal.gmailUrl}
+          target="_blank"
+          rel="noreferrer"
           aria-label="Email"
           whileHover={{ y: -4, color: 'var(--azure-light)' }}
           style={{ color: 'var(--text-2)', transition: 'color 0.2s ease' }}
@@ -48,8 +50,10 @@ export default function SideBars() {
         </motion.a>
 
         <motion.a
-          href={`tel:${personal.phone.replace(/\s/g, '')}`}
-          aria-label="Phone"
+          href={personal.whatsappUrl}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="WhatsApp"
           whileHover={{ y: -4, color: 'var(--azure-light)' }}
           style={{ color: 'var(--text-2)', transition: 'color 0.2s ease' }}
         >
@@ -82,7 +86,9 @@ export default function SideBars() {
         }}
       >
         <motion.a
-          href={`mailto:${personal.email}`}
+          href={personal.gmailUrl}
+          target="_blank"
+          rel="noreferrer"
           whileHover={{ color: 'var(--azure-light)' }}
           style={{
             writingMode: 'vertical-rl',
