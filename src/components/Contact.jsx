@@ -29,10 +29,8 @@ function ContactCard({ icon: Icon, label, value, href, onClick }) {
       <div className="contact-card__icon">
         <Icon size={20} />
       </div>
-      <div>
-        <div className="contact-card__label">{label}</div>
-        <div className="contact-card__value">{value}</div>
-      </div>
+      <div className="contact-card__label">{label}</div>
+      <div className="contact-card__value">{value}</div>
     </TiltCard>
   )
 
