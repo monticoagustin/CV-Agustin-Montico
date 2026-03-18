@@ -52,7 +52,7 @@ export default function TiltCard({ children, className, style, onClick, intensit
           zIndex: 1,
         }}
       />
-      <div style={{ position: 'relative', zIndex: 2 }}>{children}</div>
+      <div style={{ position: 'relative', zIndex: 2, display: 'inherit', flexDirection: 'inherit', gap: 'inherit', alignItems: 'inherit', width: '100%' }}>{children}</div>
     </motion.div>
   )
 }
