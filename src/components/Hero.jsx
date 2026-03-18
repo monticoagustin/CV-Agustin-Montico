@@ -17,7 +17,6 @@ const item = {
 export default function Hero() {
   const ripple = useRipple()
   const rippleBlue = useRipple('rgba(0,120,212,0.25)')
-  const typedText = useTypewriter(roles)
 
   // Mouse parallax
   const mouseX = useMotionValue(0)
