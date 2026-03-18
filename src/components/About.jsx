@@ -39,7 +39,7 @@ export default function About() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: '-80px' }}
+          viewport={{ once: false, margin: '-80px' }}
           variants={stagger}
         >
           <motion.p className="sec-label" variants={fadeUp}>About Me</motion.p>
@@ -48,7 +48,7 @@ export default function About() {
             className="sec-title"
             initial={{ clipPath: 'inset(0 100% 0 0)', opacity: 1 }}
             whileInView={{ clipPath: 'inset(0 0% 0 0)' }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.9, ease: [0.77, 0, 0.18, 1], delay: 0.1 }}
           >
             Professional Profile

@@ -30,7 +30,7 @@ export default function Marquee() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       transition={{ duration: 0.8 }}
       style={{
         padding: '2.5rem 0',

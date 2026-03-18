@@ -1207,3 +1207,20 @@ footer span {
 .cert-card .cert-card__icon {
   margin: 0 auto;
 }
+
+/* ===== ICON SPACING FIX ===== */
+.cert-card {
+  gap: 1rem;
+}
+
+.cert-card__name {
+  margin-top: 0.25rem;
+}
+
+.contact-card {
+  gap: 1.25rem;
+}
+
+.contact-card__icon {
+  flex-shrink: 0;
+}

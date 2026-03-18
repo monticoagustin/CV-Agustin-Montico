@@ -30,7 +30,7 @@ export default function Experience() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: '-80px' }}
+          viewport={{ once: false, margin: '-80px' }}
           variants={stagger}
         >
           <motion.p className="sec-label" variants={fadeUp}>Career</motion.p>
@@ -39,7 +39,7 @@ export default function Experience() {
             className="sec-title"
             initial={{ clipPath: 'inset(0 100% 0 0)', opacity: 1 }}
             whileInView={{ clipPath: 'inset(0 0% 0 0)' }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.9, ease: [0.77, 0, 0.18, 1], delay: 0.1 }}
           >
             Work Experience
@@ -51,7 +51,7 @@ export default function Experience() {
               className="timeline-line"
               initial={{ scaleY: 0 }}
               whileInView={{ scaleY: 1 }}
-              viewport={{ once: true, margin: '-50px' }}
+              viewport={{ once: false, margin: '-50px' }}
               transition={{ duration: 1.8, ease: [0.25, 0.46, 0.45, 0.94] }}
             />
 
@@ -62,7 +62,7 @@ export default function Experience() {
                     className={`exp-dot${exp.current ? ' exp-dot--current' : ''}`}
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false }}
                     transition={{ type: 'spring', stiffness: 400, damping: 20, delay: 0.2 }}
                   />
                 </div>
