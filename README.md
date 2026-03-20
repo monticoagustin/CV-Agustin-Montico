@@ -1,9 +1,9 @@
 # Agustin Montico — Personal Portfolio & CV
  
 A modern, responsive portfolio website showcasing my experience as a **Cloud & Security Analyst** specializing in Microsoft Azure, M365, and IT infrastructure.
- 
-🔗 **Live Site:** [cv-agustin-montico.vercel.app](https://cv-agustin-montico.vercel.app)
- 
+ 🔗 **Live Site:** [cv-agustin-montico.vercel.app](https://cv-agustin-montico.vercel.app)
+
+![Preview](./preview.PNG)
 ---
  
 ## About
